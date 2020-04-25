@@ -67,4 +67,10 @@ mark {
 a {
   text-decoration: none;
 }
+
+/* ---------------------------------- image --------------------------------- */
+img {
+  max-width: 100%;
+  height: auto;
+}
 /*# sourceMappingURL=custom.css.map */
