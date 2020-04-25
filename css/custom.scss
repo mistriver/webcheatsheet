@@ -1,0 +1,77 @@
+$colorBlue: #009cde;
+$colorWhite: white;
+$colorWhite2: #eee;
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------------------------- navigation bar ----------------------------- */
+
+.navBar {
+  background-color: $colorWhite;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid $colorWhite2;
+  z-index: 1;
+
+  a {
+    color: black;
+    float: left;
+    font-size: 11px;
+    letter-spacing: 0.2rem;
+    padding-bottom: 15px;
+    padding-right: 30px;
+    padding-top: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+      color: $colorBlue;
+    }
+  }
+
+  .icon {
+    display: none;
+  }
+}
+
+/* --------------------------------- header --------------------------------- */
+
+header {
+  text-align: center;
+  margin-top: 18rem;
+  margin-bottom: 7rem;
+
+  strong {
+    font-style: none;
+    font-weight: normal;
+    color: $colorBlue;
+  }
+}
+
+/* --------------------------------- section -------------------------------- */
+
+section {
+  margin-top: 5rem !important;
+
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &:hover {
+      color: $colorBlue;
+      border-color: $colorBlue;
+      transition: 0.5s;
+    }
+  }
+}
+
+/* ---------------------------------- typo ---------------------------------- */
+
+mark {
+  background-color: $colorBlue;
+}
+
+a {
+  text-decoration: none;
+}

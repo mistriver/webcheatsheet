@@ -1,0 +1,70 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/* ----------------------------- navigation bar ----------------------------- */
+.navBar {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #eee;
+  z-index: 1;
+}
+
+.navBar a {
+  color: black;
+  float: left;
+  font-size: 11px;
+  letter-spacing: 0.2rem;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-top: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.navBar a:hover {
+  color: #009cde;
+}
+
+.navBar .icon {
+  display: none;
+}
+
+/* --------------------------------- header --------------------------------- */
+header {
+  text-align: center;
+  margin-top: 18rem;
+  margin-bottom: 7rem;
+}
+
+header strong {
+  font-style: none;
+  font-weight: normal;
+  color: #009cde;
+}
+
+/* --------------------------------- section -------------------------------- */
+section {
+  margin-top: 5rem !important;
+}
+
+section input[type="button"]:hover,
+section input[type="submit"]:hover,
+section input[type="reset"]:hover {
+  color: #009cde;
+  border-color: #009cde;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* ---------------------------------- typo ---------------------------------- */
+mark {
+  background-color: #009cde;
+}
+
+a {
+  text-decoration: none;
+}
+/*# sourceMappingURL=custom.css.map */
