@@ -59,6 +59,10 @@ section input[type="reset"]:hover {
   transition: 0.5s;
 }
 
+section pre {
+  margin-top: 0;
+}
+
 /* ---------------------------------- typo ---------------------------------- */
 mark {
   background-color: #009cde;
