@@ -8,7 +8,7 @@ html {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #e1e1e1;
   z-index: 1;
 }
 
