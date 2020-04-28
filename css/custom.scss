@@ -2,8 +2,48 @@ $colorBlue: #009cde;
 $colorWhite: white;
 $colorWhite2: #e1e1e1;
 
+/* ---------------------------------- theme --------------------------------- */
+
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.theme-blue {
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &:hover {
+      color: $colorBlue;
+      border-color: $colorBlue;
+      transition: 0.5s;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $colorBlue;
+      border-color: $colorBlue;
+    }
+  }
+
+  mark {
+    background-color: $colorBlue;
+  }
+
+  header {
+    strong {
+      color: $colorBlue;
+    }
+  }
 }
 
 /* ----------------------------- navigation bar ----------------------------- */
@@ -25,10 +65,6 @@ html {
     padding-top: 15px;
     text-decoration: none;
     text-transform: uppercase;
-
-    &:hover {
-      color: $colorBlue;
-    }
   }
 
   .icon {
@@ -44,9 +80,7 @@ header {
   margin-bottom: 7rem;
 
   strong {
-    font-style: none;
     font-weight: normal;
-    color: $colorBlue;
   }
 }
 
@@ -55,29 +89,13 @@ header {
 section {
   margin-top: 5rem !important;
 
-  input[type="button"],
-  input[type="submit"],
-  input[type="reset"] {
-    &:hover {
-      color: $colorBlue;
-      border-color: $colorBlue;
-      transition: 0.5s;
-    }
-  }
-
   pre {
     margin-top: 0;
   }
-}
 
-/* ---------------------------------- typo ---------------------------------- */
-
-mark {
-  background-color: $colorBlue;
-}
-
-a {
-  text-decoration: none;
+  .center {
+    text-align: center;
+  }
 }
 
 /* ---------------------------------- image --------------------------------- */
@@ -85,4 +103,12 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.icon {
+  display: block;
+}
+
+.icon-blue {
+  color: $colorBlue;
 }

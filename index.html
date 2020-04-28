@@ -1,281 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebCheatSheet</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="css/skeleton/normalize.css" />
     <link rel="stylesheet" href="css/skeleton/skeleton.css" />
     <link rel="stylesheet" href="css/custom.css" />
     <link rel="icon" href="https://img.icons8.com/pastel-glyph/64/000000/source-code--v1.png" />
+    <script defer src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"></script>
   </head>
 
   <body>
     <header>
       <div class="container">
-        <h1 class="title">A basic <strong>HTML</strong> cheatsheet</h1>
+        <h1 class="title">Some basics <strong>web</strong> cheatsheet</h1>
       </div>
     </header>
 
-    <!-- ----------------------------- navigation ------------------------------ -->
-    <nav class="container navBar" id="mainNavBar">
-      <a href="#">Intro</a>
-      <a href="#titres">Titres</a>
-      <a href="#text">Textes</a>
-      <a href="#lists">Listes</a>
-      <a href="#tables">Tables</a>
-      <a href="#forms">Forms</a>
-      <a href="#images">Images</a>
-    </nav>
-
-    <!-- ------------------------------- titres -------------------------------- -->
-    <section class="container" id="titres">
-      <h2>Titres</h2>
-      <div class="row">
-        <div class="four columns">
-          <h1>niveau 1</h1>
-          <h2>niveau 2</h2>
-          <h3>niveau 3</h3>
-          <h4>niveau 4</h4>
-          <h5>niveau 5</h5>
-          <h6>niveau 6</h6>
-        </div>
-        <div class="eight columns">
-          <pre><code>
-&lt;h1&gt;niveau 1&lt;/h1&gt;
-&lt;h2&gt;niveau 2&lt;/h2&gt;
-&lt;h3&gt;niveau 3&lt;/h3&gt;
-&lt;h4&gt;niveau 4&lt;/h4&gt;
-&lt;h5&gt;niveau 5&lt;/h5&gt;
-&lt;h6&gt;niveau 6&lt;/h6&gt;
-          </code></pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------- texte -------------------------------- -->
-    <section class="container" id="text">
-      <h2>Textes</h2>
-
-      <p>Ceci est un paragraphe avec des mots en <i>italique</i>, <b>gras</b> et <mark>surligné</mark>.</p>
-
-      <pre><code>
-&lt;p&gt;
-  Ceci est un paragraphe avec des mots en &lt;i&gt;italique&lt;/i&gt;, 
-  &lt;b&gt;gras&lt;/b&gt; et &lt;mark&gt;surligné&lt;/mark&gt;.
-&lt;p&gt;
-&lt;p&gt;
-  Ceci est un paragraphe avec des mots en &lt;em&gt;italique&lt;/em&gt;, 
-  &lt;strong&gt;gras&lt;/strong&gt; et &lt;mark&gt;surligné&lt;/mark&gt;.
-&lt;p&gt;
-      </code></pre>
-    </section>
-
-    <!-- ------------------------------- listes -------------------------------- -->
-
-    <section class="container" id="lists">
-      <h2>Listes</h2>
-      <h4>Listes ordonnées</h4>
-      <div class="row">
-        <div class="four columns">
-          <ol>
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-          </ol>
-        </div>
-        <div class="eight columns">
-          <pre><code>
-&lt;ol&gt;
-  &lt;li&gt;item 1&lt;/li&gt;
-  &lt;li&gt;item 2&lt;/li&gt;
-  &lt;li&gt;item 3&lt;/li&gt;
-&lt;/ol&gt;
-          </code></pre>
-        </div>
-      </div>
-      <h4>Listes non ordonnées</h4>
-      <div class="row">
-        <div class="four columns">
-          <ul>
-            <li>item1</li>
-            <li>item2</li>
-            <li>item3</li>
-          </ul>
-        </div>
-        <div class="eight columns">
-          <pre><code>
-&lt;ul&gt;
-  &lt;li&gt;item 1&lt;/li&gt;
-  &lt;li&gt;item 2&lt;/li&gt;
-  &lt;li&gt;item 3&lt;/li&gt;
-&lt;/ul&gt;
-          </code></pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------- links -------------------------------- -->
-
-    <section class="container" id="links">
-      <h2>Links</h2>
-      <div class="row">
-        <div class="four columns">
-          <p>un lien vers un <a href="https://www.google.com" target="_blank">site</a></p>
-          <p>un lien vers une <a href="page.html" target="_blank">page</a></p>
-          <p>un lien vers une <a href="#links" target="_blank">ancre</a></p>
-        </div>
-        <div class="eight columns">
-          <pre><code>
-un lien vers un &lt;a href="https://www.google.com"&gt;site&lt;/a&gt;
-un lien vers une &lt;a href="page.html"&gt;page&lt;/a&gt;
-un lien vers une &lt;a href="#ancre"&gt;ancre&lt;/a&gt;
-          </code></pre>
-        </div>
-      </div>
-    </section>
-
-    <!-- ------------------------------- tables -------------------------------- -->
-
-    <section id="tables">
+    <section>
       <div class="container">
-        <h2>Tables</h2>
         <div class="row">
-          <div class="four columns">
-            <table class="u-full-width">
-              <thead>
-                <tr>
-                  <th>head 1</th>
-                  <th>head 2</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>data 1</td>
-                  <td>data 2</td>
-                </tr>
-                <tr>
-                  <td>data 3</td>
-                  <td>data 4</td>
-                </tr>
-              </tbody>
-            </table>
+          <div class="six columns">
+            <div class="center theme-blue">
+              <span class="icon icon-blue">
+                <i class="fab fa-html5 fa-10x"></i>
+              </span>
+              <a class="button" href="sheethtml.html" target="_blank">HTML5</a>
+            </div>
           </div>
-          <div class="eight columns">
-            <pre><code>
-&lt;table&gt;
-  &lt;thead&gt;
-    &lt;tr&gt; &lt;th&gt;head 1&lt;/th&gt; &lt;th&gt;head 2&lt;/th&gt; &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-    &lt;tr&gt; &lt;td&gt;data 1&lt;/td&gt; &lt;td&gt;data 2&lt;/td&gt; &lt;/tr&gt; 
-    &lt;tr&gt; &lt;td&gt;data 3&lt;/td&gt; &lt;td&gt;data 4&lt;/td&gt; &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-            </code></pre>
+          <div class="six columns">
+            <div class="center">
+              <span class="icon">
+                <i class="fab fa-js fa-10x"></i>
+              </span>
+              <a class="button disabled">Javascript</a>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- -------------------------------- forms -------------------------------- -->
-    <section id="forms">
-      <div class="container">
-        <h2>Forms</h2>
-        <div class="row">
-          <div class="four columns">
-            <form>
-              <label for="user">Username:</label>
-              <input class="u-full-width" type="text" name="user" id="user" placeholder="username" />
-
-              <label for="pwd">Password:</label>
-              <input class="u-full-width" type="password" name="pwd" id="pwd" />
-
-              <label for="message">Message:</label>
-              <textarea class="u-full-width" name="message" id="message" placeholder="Message..."></textarea>
-
-              <label for="options">Options:</label>
-              <select class="u-full-width" name="options" id="options">
-                <option value="choice1">choice 1</option>
-                <option value="choice2">choice 2</option>
-                <option value="choice3">choice 3</option>
-              </select>
-
-              <fieldset>
-                <legend>Checkbox:</legend>
-                <label for="option1">
-                  <input type="checkbox" name="option1" id="option1" />
-                  <span class="label-body">option you can select</span>
-                </label>
-              </fieldset>
-
-              <fieldset>
-                <legend>Radio:</legend>
-                <label for="radio1">
-                  <input type="radio" name="radios" id="radio1" value="radio1" />
-                  <span class="label-body">Choice 1</span>
-                </label>
-                <label for="radio2">
-                  <input type="radio" name="radios" id="radio2" value="radio2" />
-                  <span class="label-body">Choice 2</span>
-                </label>
-              </fieldset>
-
-              <input type="submit" value="send" />
-              <input type="reset" value="cancel" />
-            </form>
-          </div>
-          <div class="eight columns">
-            <pre><code>
-&lt;form&gt;
-  &lt;label for="user"&gt;Username:&lt;/label&gt;
-  &lt;input type="text" name="user" id="user" placeholder="username" /&gt;
-
-  &lt;label for="pwd"&gt;Password:&lt;/label&gt;
-  &lt;input type="password" name="pwd" id="pwd" /&gt;
-
-  &lt;label for="msg"&gt;Message:&lt;/label&gt;
-  &lt;textarea name="msg" id="msg" placeholder="Message..."&gt;&lt;/textarea&gt;
-
-  &lt;label for="options"&gt;Options:&lt;/label&gt;
-  &lt;select name="options" id="options"&gt;
-    &lt;option value="choice1"&gt;choice 1&lt;/option&gt;
-    &lt;option value="choice2"&gt;choice 2&lt;/option&gt;
-    &lt;option value="choice3"&gt;choice 3&lt;/option&gt;
-  &lt;/select&gt;
-
-  &lt;fieldset&gt;
-    &lt;legend&gt;Checkbox:&lt;/legend&gt;
-    &lt;input type="checkbox" name="option1" id="option1" /&gt;
-    &lt;label for="option1"&gt; option you can select &lt;/label&gt;
-  &lt;/fieldset&gt;
-
-  &lt;fieldset&gt;
-    &lt;legend&gt;Radio:&lt;/legend&gt;
-    &lt;input type="radio" name="radios" id="radio1" value="1" /&gt;
-    &lt;label for="radio1"&gt; Choice 1 &lt;/label&gt;
-    &lt;input type="radio" name="radios" id="radio2" value="2" /&gt;
-    &lt;label for="radio2"&gt; Choice 2 &lt;/label&gt;
-  &lt;/fieldset&gt;
-
-  &lt;input type="submit" value="send" /&gt;
-  &lt;input type="reset" value="cancel" /&gt;
-&lt;/form&gt;                
-            </code></pre>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ------------------------------- images -------------------------------- -->
-
-    <section id="images">
-      <div class="container">
-        <h2>Images</h2>
-        <pre><code>
-&lt;img id="image1" src="https://pngimage.net/wp-content/uploads/2018/06/flamant-rose-png.png" alt="imagelien" /&gt;     
-        </code></pre>
-        <img id="image1" src="https://pngimage.net/wp-content/uploads/2018/06/flamant-rose-png.png" alt="imagelien" />
       </div>
     </section>
   </body>

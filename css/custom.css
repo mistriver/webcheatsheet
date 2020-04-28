@@ -1,5 +1,37 @@
+/* ---------------------------------- theme --------------------------------- */
 html {
   scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+.theme-blue input[type="button"]:hover,
+.theme-blue input[type="submit"]:hover,
+.theme-blue input[type="reset"]:hover {
+  color: #009cde;
+  border-color: #009cde;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.theme-blue a:hover {
+  color: #009cde;
+  border-color: #009cde;
+}
+
+.theme-blue mark {
+  background-color: #009cde;
+}
+
+.theme-blue header strong {
+  color: #009cde;
 }
 
 /* ----------------------------- navigation bar ----------------------------- */
@@ -24,10 +56,6 @@ html {
   text-transform: uppercase;
 }
 
-.navBar a:hover {
-  color: #009cde;
-}
-
 .navBar .icon {
   display: none;
 }
@@ -40,9 +68,7 @@ header {
 }
 
 header strong {
-  font-style: none;
   font-weight: normal;
-  color: #009cde;
 }
 
 /* --------------------------------- section -------------------------------- */
@@ -50,31 +76,25 @@ section {
   margin-top: 5rem !important;
 }
 
-section input[type="button"]:hover,
-section input[type="submit"]:hover,
-section input[type="reset"]:hover {
-  color: #009cde;
-  border-color: #009cde;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
 section pre {
   margin-top: 0;
 }
 
-/* ---------------------------------- typo ---------------------------------- */
-mark {
-  background-color: #009cde;
-}
-
-a {
-  text-decoration: none;
+section .center {
+  text-align: center;
 }
 
 /* ---------------------------------- image --------------------------------- */
 img {
   max-width: 100%;
   height: auto;
+}
+
+.icon {
+  display: block;
+}
+
+.icon-blue {
+  color: #009cde;
 }
 /*# sourceMappingURL=custom.css.map */
