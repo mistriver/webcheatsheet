@@ -34,7 +34,37 @@ a.disabled {
   color: #009cde;
 }
 
+.theme-orange input[type="button"]:hover,
+.theme-orange input[type="submit"]:hover,
+.theme-orange input[type="reset"]:hover {
+  color: #de7600;
+  border-color: #de7600;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.theme-orange a:hover {
+  color: #de7600;
+  border-color: #de7600;
+}
+
+.theme-orange mark {
+  background-color: #de7600;
+}
+
+.theme-orange header strong {
+  color: #de7600;
+}
+
 /* ----------------------------- navigation bar ----------------------------- */
+.nav_close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+}
+
 .navBar {
   background-color: white;
   position: -webkit-sticky;
@@ -96,5 +126,9 @@ img {
 
 .icon-blue {
   color: #009cde;
+}
+
+.icon-orange {
+  color: #de7600;
 }
 /*# sourceMappingURL=custom.css.map */

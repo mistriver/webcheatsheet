@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>WebCheatSheet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/skeleton/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton/skeleton.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="icon" href="https://img.icons8.com/pastel-glyph/64/000000/source-code--v1.png" />
+  </head>
+
+  <body class="theme-orange">
+    <header>
+      <div class="container">
+        <h1 class="title">A basic <strong>JAVASCRIPT</strong> cheatsheet</h1>
+      </div>
+    </header>
+
+    <!-- ----------------------------- navigation ------------------------------ -->
+    <a href="/index.html" class="nav_close"><img src="images/cross.svg" /></a>
+
+    <nav class="container navBar" id="mainNavBar">
+      <a href="#">Intro</a>
+      <a href="#access_dom">Access DOM</a>
+      <a href="#modify_dom">Modify DOM</a>
+    </nav>
+
+    <!-- --------------------------- access element ---------------------------- -->
+
+    <section class="container" id="access_dom">
+      <h2>Access elements from DOM</h2>
+
+      <h4>From Document</h4>
+
+      <p>Find an element by ID</p>
+      <pre><code>document.getElementById("myid");</code></pre>
+
+      <p>Find all elements by class</p>
+      <pre><code>document.getElementByClassName("myclass");</code></pre>
+
+      <p>Find all elements by HTML Tag</p>
+      <pre><code>document.getElementsByTagName("myhtmltag");</code></pre>
+
+      <h4>From element</h4>
+
+      <p>Using same methods</p>
+      <pre><code>let myElement = document.getElementByClassName("myclass");
+myElement.getElementsByTagName("myhtmltag");</code></pre>
+
+      <div class="row">
+        <div class="three columns"><p>Access children elements</p></div>
+        <div class="nine columns">
+          <pre><code>let data = myElement.children;</code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns"><p>Access parent elements</p></div>
+        <div class="nine columns">
+          <pre><code>let data = myElement.parentElement;</code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns"><p>Access next element</p></div>
+        <div class="nine columns">
+          <pre><code>let data = myElement.nextElementSibling;</code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns"><p>Access previous element</p></div>
+        <div class="nine columns">
+          <pre><code>let data = myElement.previousElementSibling;</code></pre>
+        </div>
+      </div>
+
+      <h4>Query selector</h4>
+
+      <p>
+        The Document method <strong>querySelector</strong> returns the first Element within the document that matches
+        the specified selector, or group of selectors.
+      </p>
+
+      <pre><code>document.querySelector("#myid");
+document.querySelector(".myclass");
+document.querySelector("mytag");
+document.querySelector("#myid mytag.myclass > mytag");</code></pre>
+
+      <p>For all elements</p>
+      <pre><code>document.querySelectorAll("#myid");</code></pre>
+    </section>
+
+    <!-- --------------------------- modify element ---------------------------- -->
+
+    <section class="container" id="modify_dom">
+      <h2>Modify elements from DOM</h2>
+
+      <h4>Modify content</h4>
+
+      <p>Element content modification</p>
+
+      <pre><code>let e = document.getElementById('myid');
+e.innerHTML = "&lt;ul&gt;&lt;li&gt;data 1&lt;/li&gt;&lt;li&gt;data 2&lt;/li&gt;&lt;/ul&gt;";
+e.textContent = "just some text but not html";</code></pre>
+
+      <h4>Modify class</h4>
+
+      <div class="row">
+        <div class="three columns"><p>Add a class</p></div>
+        <div class="nine columns">
+          <pre><code>e.classList.add("myClass");</code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns"><p>Remove a class</p></div>
+        <div class="nine columns">
+          <pre><code>e.classList.remove("myClass");</code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns"><p>Replace a class</p></div>
+        <div class="nine columns">
+          <pre><code>e.classList.replace("myClass");</code></pre>
+        </div>
+      </div>
+      <div class="row">
+        <div class="three columns"><p>Check if contains a class</p></div>
+        <div class="nine columns">
+          <pre><code>e.classList.contains("myClass");</code></pre>
+        </div>
+      </div>
+
+      <h4>Modify style</h4>
+
+      <p>For an element you can access to the object <em>style</em> and modify all properties.</p>
+
+      <pre><code>e.style.color = "#fff";
+e.style.backgroundColor = "#000";
+e.style.fontWeight = "bold";</code></pre>
+
+      <h4>Element Manipulation</h4>
+
+      <p><strong>Create</strong> an element add it to a document element with <em>appendChild</em></p>
+
+      <pre><code>const newElt = document.createElement("div");</code></pre>
+
+      <p><strong>Add</strong> element <em>newElt</em> to element <em>elt</em></p>
+      <pre><code>let elt = document.getElementById("myid");
+elt.appendChild(newElt);</code></pre>
+
+      <p><strong>Remove</strong> element <em>newElt</em> from element <em>elt</em></p>
+      <pre><code>elt.removeChild(newElt);</code></pre>
+
+      <p><strong>Replace</strong> element <em>oldElt</em> with <em>newElt</em> to element <em>elt</em></p>
+      <pre><code>elt.replaceChild(newElt, oldElt);</code></pre>
+    </section>
+  </body>
+</html>

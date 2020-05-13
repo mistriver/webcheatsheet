@@ -1,4 +1,5 @@
 $colorBlue: #009cde;
+$colorOrange: #de7600;
 $colorWhite: white;
 $colorWhite2: #e1e1e1;
 
@@ -46,7 +47,44 @@ a.disabled {
   }
 }
 
+.theme-orange {
+  input[type="button"],
+  input[type="submit"],
+  input[type="reset"] {
+    &:hover {
+      color: $colorOrange;
+      border-color: $colorOrange;
+      transition: 0.5s;
+    }
+  }
+
+  a {
+    &:hover {
+      color: $colorOrange;
+      border-color: $colorOrange;
+    }
+  }
+
+  mark {
+    background-color: $colorOrange;
+  }
+
+  header {
+    strong {
+      color: $colorOrange;
+    }
+  }
+}
+
 /* ----------------------------- navigation bar ----------------------------- */
+
+.nav_close {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  width: 24px;
+  height: 24px;
+}
 
 .navBar {
   background-color: $colorWhite;
@@ -111,4 +149,8 @@ img {
 
 .icon-blue {
   color: $colorBlue;
+}
+
+.icon-orange {
+  color: $colorOrange;
 }
